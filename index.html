@@ -1,91 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Farma Assunção - Atendimento no WhatsApp</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@700;800&display=swap" rel="stylesheet">
-<style>
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html, body { height: 100%; }
-body { background: #f1f5f9; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
-body { display: flex; flex-direction: column; min-height: 100vh; }
-@keyframes ping { 75%,100% { transform: scale(2.2); opacity: 0; } }
-.dot-ping { animation: ping 1.5s cubic-bezier(0,0,0.2,1) infinite; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Farma Assunção Drogaria</title>
+  <link rel="icon" type="image/jpeg" href="assets/logo-farma-assuncao.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: #e9eef7; }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: .35; transform: scale(.85); }
+    }
+  </style>
 </head>
 <body>
-<header style="background:#fff; border-bottom:1px solid #e2e8f0; padding:14px 16px; display:flex; justify-content:center; align-items:center; box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-  <img src="Logo_Farma_Assuncao.jpeg" alt="Farma Assunção Drogaria" style="height:52px; width:auto; max-width:88%; object-fit:contain; display:block;">
-  <div class="tema-badge" style="display:inline-flex; align-items:center; gap:6px; background:#ecfdf5; color:#15803d; font-size:11px; font-weight:600; padding:5px 14px; border-radius:99px; border:1px solid #bbf7d0; margin-bottom:20px;">
-<main style="flex:1 1 0; min-height:0; display:flex; flex-direction:column; align-items:center; padding:22px 20px 22px; text-align:center; max-width:420px; margin:0 auto; width:100%;">
-    Entrega rápida no seu bairro
-  <div style="display:inline-flex; align-items:center; gap:6px; background:#ecfdf5; color:#15803d; font-size:11px; font-weight:600; padding:6px 16px; border-radius:999px; border:1px solid #bbf7d0; margin-bottom:18px;">
-    <svg width="13" height="13" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-  <div class="tema-escudo-bg" style="background:#eff6ff; border:1.5px solid rgba(0,86,166,0.15); border-radius:50%; width:68px; height:68px; display:flex; align-items:center; justify-content:center; margin-bottom:20px;">
-    <svg class="tema-escudo" width="34" height="34" fill="none" viewBox="0 0 24 24" stroke="#0056a6" stroke-width="2">
 
-  <div style="background:#eff6ff; border:1.5px solid rgba(0,86,166,0.15); border-radius:50%; width:68px; height:68px; display:flex; align-items:center; justify-content:center; margin-bottom:18px;">
-    <svg width="34" height="34" fill="none" viewBox="0 0 24 24" stroke="#0056a6" stroke-width="2">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-    </svg>
-  </div>
+  <div style="max-width:440px; margin:0 auto; background:#fff; min-height:100vh; display:flex; flex-direction:column; box-shadow:0 0 40px rgba(0,0,0,.06);">
 
-  <h1 style="font-family:'Outfit',sans-serif; font-size:1.35rem; font-weight:800; color:#0f172a; line-height:1.25; margin:0 0 12px; letter-spacing:-0.3px;">
-    Medicamentos e Perfumaria com <span style="color:#1d4ed8;">Entrega Rápida</span> no seu Bairro!
-  </h1>
-
-  <p style="font-size:13px; color:#64748b; line-height:1.7; margin:0 0 24px; padding:0 4px;">
-    Envie a foto da sua receita ou lista de compras e receba o orçamento direto no seu celular.
-  </p>
-
-  <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:14px;">
-    <span style="display:inline-flex; align-items:center; justify-content:center; gap:6px; font-size:11px; font-weight:700; color:#14532d; background:#fff; border:1px solid #22c55e; padding:6px 14px; border-radius:999px; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
-      <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#22c55e" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-      Preço justo
-    </span>
-    <span style="display:inline-flex; align-items:center; justify-content:center; gap:6px; font-size:11px; font-weight:700; color:#14532d; background:#fff; border:1px solid #22c55e; padding:6px 14px; border-radius:999px; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
-      <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#22c55e" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-      Sem filas
-    </span>
-    <span style="display:inline-flex; align-items:center; justify-content:center; gap:6px; font-size:11px; font-weight:700; color:#14532d; background:#fff; border:1px solid #22c55e; padding:6px 14px; border-radius:999px; box-shadow:0 1px 2px rgba(0,0,0,0.04);">
-      <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="#22c55e" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-      Atendimento ágil
-    </span>
-  </div>
-
-  <div style="display:inline-flex; align-items:center; gap:7px; font-size:11px; font-weight:600; color:#15803d; background:#dcfce7; border:1px solid #bbf7d0; padding:6px 14px; border-radius:999px; box-shadow:0 1px 3px rgba(0,0,0,0.05); margin-bottom:18px;">
-    <span style="position:relative; display:inline-flex; width:10px; height:10px;">
-      <span class="dot-ping" style="position:absolute; inset:0; border-radius:50%; background:#4ade80; opacity:0.75;"></span>
-      <span style="position:relative; width:10px; height:10px; border-radius:50%; background:#22c55e; display:inline-flex;"></span>
-    </span>
-    Atendimento ativo agora
-  </div>
-
-  <div style="width:100%; border-top:1px solid #e2e8f0; padding-top:14px; text-align:center; margin-top:6px;">
-    <p style="font-size:10px; font-weight:600; color:#0056a6; margin:0 0 3px;">Farma Assunção Drogaria</p>
-    <p style="font-size:9px; color:#94a3b8; margin:0 0 8px;">CNPJ: 00.000.000/0001-00 | Seg-Sab 8h-20h</p>
-    <div style="display:flex; justify-content:center; gap:14px; font-size:9px; color:#1d4ed8;">
-      <a href="#" style="color:#1d4ed8; text-decoration:none;">Política de Privacidade</a>
-      <span style="color:#cbd5e1;">•</span>
-      <a href="#" style="color:#1d4ed8; text-decoration:none;">Termos de Uso</a>
+    <!-- Header / logo -->
+    <div style="background:#fff; padding:26px 24px 22px; display:flex; justify-content:center; align-items:center;">
+      <img src="assets/logo-farma-assuncao.jpeg" alt="Farma Assunção Drogaria" style="width:220px; max-width:75%; height:auto; display:block;">
     </div>
-  </div>
 
-</main>
+    <!-- Body -->
+    <div style="flex:1; background:linear-gradient(180deg,#eef2f9 0%,#e9eef7 100%); padding:30px 24px 0; display:flex; flex-direction:column; align-items:center; text-align:center;">
 
-<div style="padding:0 16px 12px; background:#f1f5f9;">
-  <a href="https://wa.me/SEUNUMERO?text=Ola!+Gostaria+de+fazer+um+orcamento." target="_blank" rel="noopener noreferrer" style="display:flex; align-items:center; justify-content:center; gap:10px; width:100%; max-width:420px; margin:0 auto; background:#25D366; color:#fff; font-size:16px; font-weight:700; padding:16px 20px; border-radius:18px; text-decoration:none; box-shadow:0 12px 30px rgba(34,197,94,0.28); -webkit-tap-highlight-color:transparent; touch-action:manipulation;">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-4.846c1.6.95 3.488 1.449 5.412 1.451 5.428 0 9.85-4.417 9.854-9.842.002-2.628-1.022-5.1-2.885-6.964C17.159 1.835 14.7 1.813 12.01 1.813c-5.43 0-9.851 4.418-9.855 9.844-.001 1.925.501 3.808 1.458 5.41l-.955 3.486 3.589-.941zm12.383-7.14c-.33-.165-1.953-.963-2.252-1.072-.3-.11-.517-.165-.735.165-.218.33-.843 1.072-1.034 1.293-.19.22-.381.247-.71.082-.33-.165-1.393-.513-2.653-1.637-.98-.874-1.641-1.954-1.833-2.284-.192-.33-.02-.508.145-.672.15-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.413-.028-.578-.083-.166-.735-1.772-1.007-2.427-.264-.636-.533-.55-.735-.56-.192-.01-.413-.012-.633-.012s-.578.083-.88.413c-.302.33-1.155 1.128-1.155 2.75s1.18 3.193 1.344 3.414c.165.22 2.321 3.54 5.624 4.966.785.34 1.398.543 1.875.694.79.25 1.507.214 2.074.129.631-.094 1.953-.798 2.226-1.53.274-.732.274-1.36.192-1.493-.082-.133-.3-.217-.63-.382z"/></svg>
-    Falar com Atendente no WhatsApp
-  </a>
-</div>
-<div style="background:#f1f5f9; padding:0 16px 12px;">
-  <div style="max-width:420px; margin:10px auto 0; border-top:1px solid rgba(148,163,184,0.35); padding-top:8px; text-align:center; font-size:9px; color:#94a3b8;">
-    Desenvolvido por <span style="color:#1d4ed8; font-weight:600;">Buzoni Developers System</span>
+      <!-- top badge -->
+      <div style="display:inline-flex; align-items:center; gap:7px; background:#eafaf0; border:1.5px solid #b6e6c6; color:#1f9d52; font-size:13px; font-weight:600; padding:8px 16px; border-radius:999px; box-shadow:0 1px 3px rgba(0,0,0,.04);">
+        <span style="color:#16a34a;">⚡</span> Entrega rápida no seu bairro
+      </div>
+
+      <!-- shield -->
+      <div style="margin-top:26px; width:64px; height:64px; border-radius:50%; background:#eaf1fd; display:flex; align-items:center; justify-content:center; border:1px solid #d6e3f7;">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#2f6fe0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+      </div>
+
+      <!-- heading -->
+      <h1 style="margin:24px 0 0; font-size:27px; line-height:1.25; font-weight:800; color:#1d2733; letter-spacing:-.5px; max-width:340px; text-wrap:balance;">
+        Medicamentos e Perfumaria com <span style="color:#2563eb;">Entrega Rápida</span> no seu Bairro!
+      </h1>
+
+      <!-- sub -->
+      <p style="margin:16px 0 0; font-size:15px; line-height:1.55; color:#7c8696; max-width:330px; text-wrap:pretty;">
+        Envie a foto da sua receita ou lista de compras e receba o orçamento direto no seu celular.
+      </p>
+
+      <!-- feature chips -->
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:24px;">
+        <span style="display:inline-flex; align-items:center; gap:6px; background:#fff; border:1px solid #5cb47e; color:#1f6b40; font-size:13px; font-weight:700; padding:8px 14px; border-radius:999px;"><span style="color:#22a35a;">✓</span> Preço justo</span>
+        <span style="display:inline-flex; align-items:center; gap:6px; background:#fff; border:1px solid #5cb47e; color:#1f6b40; font-size:13px; font-weight:700; padding:8px 14px; border-radius:999px;"><span style="color:#22a35a;">✓</span> Sem filas</span>
+        <span style="display:inline-flex; align-items:center; gap:6px; background:#fff; border:1px solid #5cb47e; color:#1f6b40; font-size:13px; font-weight:700; padding:8px 14px; border-radius:999px;"><span style="color:#22a35a;">✓</span> Atendimento ágil</span>
+      </div>
+
+      <!-- active now -->
+      <div style="display:inline-flex; align-items:center; gap:8px; background:#e9f8ef; border:1px solid #7fc99c; color:#1f6b40; font-size:13px; font-weight:700; padding:8px 16px; border-radius:999px; margin-top:14px;">
+        <span style="width:9px; height:9px; border-radius:50%; background:#22a35a; animation:pulseDot 1.3s ease-in-out infinite;"></span> Atendimento ativo agora
+      </div>
+
+      <!-- divider -->
+      <div style="width:100%; max-width:300px; height:1px; background:#d4dbe6; margin:28px 0 20px;"></div>
+
+      <!-- legal info -->
+      <div style="font-size:14px; font-weight:700; color:#2557a7;">Farma Assunção Drogaria</div>
+      <div style="font-size:12px; color:#8a93a3; margin-top:6px;">CNPJ: 00.000.000/0001-00 &nbsp;|&nbsp; Seg-Sab 8h-20h</div>
+      <div style="display:flex; align-items:center; gap:10px; margin-top:10px;">
+        <a href="#" style="font-size:12px; color:#5a6a82; text-decoration:none;">Política de Privacidade</a>
+        <span style="color:#aab4c4; font-size:12px;">•</span>
+        <a href="#" style="font-size:12px; color:#2f6fe0; text-decoration:none;">Termos de Uso</a>
+      </div>
+
+      <!-- whatsapp cta -->
+      <a href="#" style="margin:24px 0; width:100%; display:flex; align-items:center; justify-content:center; gap:12px; background:linear-gradient(180deg,#2bd366 0%,#22b558 100%); color:#fff; font-size:17px; font-weight:700; padding:18px; border-radius:16px; text-decoration:none; box-shadow:0 8px 20px rgba(34,181,88,.35);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#fff"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21 5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm5.8 14.01c-.24.68-1.42 1.3-1.95 1.34-.5.05-.97.24-3.27-.68-2.77-1.09-4.5-3.91-4.64-4.09-.13-.18-1.1-1.46-1.1-2.78 0-1.32.69-1.97.94-2.24.24-.27.53-.34.71-.34.18 0 .35 0 .51.01.16.01.39-.06.6.46.24.55.79 1.9.86 2.04.07.13.11.29.02.47-.09.18-.13.29-.27.45-.13.16-.28.35-.4.47-.13.13-.27.28-.12.54.16.27.69 1.13 1.48 1.83 1.02.9 1.87 1.18 2.14 1.31.27.13.42.11.58-.07.16-.18.67-.78.85-1.05.18-.27.36-.22.6-.13.24.09 1.54.73 1.81.86.27.13.45.2.51.31.07.11.07.64-.17 1.31z"/></svg>
+        Falar com Atendente no WhatsApp
+      </a>
+    </div>
+
+    <!-- Footer / assinatura Buzoni -->
+    <div style="background:#e9eef7; padding:4px 24px 6px; display:flex; flex-direction:column; align-items:center;">
+      <div style="width:320px; height:1px; background:#c4cee0; margin-bottom:4px;"></div>
+      <span style="font-size:9px; letter-spacing:.2px; color:#9aa6ba; font-weight:500;">Desenvolvido por <span style="font-weight:700; color:#1a3a6b;">Buzoni Developers System</span></span>
+    </div>
+
   </div>
-</div>
 
 </body>
 </html>
-
